@@ -4,6 +4,7 @@ services:
     container_name: photoprism
     stop_grace_period: 10s
     privileged: true
+    restart: unless-stopped
     security_opt:
       - seccomp:unconfined
       - apparmor:unconfined
